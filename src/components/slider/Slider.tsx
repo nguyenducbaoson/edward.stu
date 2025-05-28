@@ -1,5 +1,9 @@
-import './hero.css';
-import HeroSwiper from '../heroswiper/HeroSwiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Pagination } from 'swiper/modules';
+import { useEffect, useRef } from 'react';
+import './style.css'
 
 const slidesData = [
     {
@@ -108,12 +112,77 @@ const slidesData = [
     }
 ]
 
-const Hero = () => {
-  return (
-    <div className="banner">
-      <HeroSwiper slides={slidesData} />
-    </div>
-  );
-};
 
-export default Hero;
+const Slider = () => {
+  const swiperWrappedRef = useRef<HTMLDivElement | null>(null);
+
+function adjustMargin() {
+  const screenWidth = window.innerWidth;
+
+  if (swiperWrappedRef.current) {
+    swiperWrappedRef.current.style.marginLeft =
+      screenWidth < 520
+        ? '0px'
+        : screenWidth <= 650
+        ? '-50px'
+        : screenWidth <= 800
+        ? '-100px'
+        : '-150px';
+  }
+}
+
+  useEffect(() =>{
+    adjustMargin();
+    window.addEventListener('resize', adjustMargin);
+    return () => window.removeEventListener('resize', adjustMargin);
+  }, [])
+  return (
+    <main className='container'>
+          <Swiper 
+          modules={[Pagination]}
+          grabCursor
+          initialSlide={2}
+          centeredSlides
+          slidesPerView="auto"
+          speed={800}
+          slideToClickedSlide
+          pagination={{clickable: true}}
+          breakpoints={{
+            320:{spaceBetween: 40},
+            650:{spaceBetween: 30},
+            1000:{spaceBetween: 20},
+          }}
+          onSwiper={(swiper) =>{
+            swiperWrappedRef.current = swiper.wrapperEl as HTMLDivElement;
+          }}>
+            {slidesData.map((slide) => (
+              <SwiperSlide key={slide._id}>
+                <img src={slide.bgImg} alt={slide.title} />
+                <div className='title'>
+                  <h1>{slide.title}</h1>
+                </div>
+                <div className='content'>
+                  <div className='text-box'>
+                    <p>{slide.description}</p>
+                  </div>
+                  <div className='footer'>
+                    <div className='category'>
+                      {slide.category.map((cate, idx) => (
+                        <span key={idx} style={{ "--i": idx + 1 } as React.CSSProperties & { [key: string]: string | number }}>
+                          {cate}
+                        </span>
+                      ))}
+                    </div>
+                    <button>
+                      <span className='label'>More</span>
+                    </button>
+                  </div>
+                </div>
+                </SwiperSlide>
+            ))};
+    </Swiper>
+    </main>
+  );
+}
+
+export default Slider
