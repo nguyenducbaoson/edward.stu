@@ -1,0 +1,133 @@
+:root {
+  --primary: #ff6b6b;
+}
+
+/* Header setup */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 30px 100px;
+  transition: 0.5s;
+  z-index: 10000 !important;
+}
+
+/* Khi cuộn */
+header.scrolled {
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid var(--primary);
+  border-image: linear-gradient(90deg, transparent, var(--primary), transparent) 30;
+  backdrop-filter: blur(20px);
+  padding: 10px 100px;
+}
+
+/* Logo bên trái */
+.logo {
+  justify-self: start;
+  font-family: 'Great Vibes', cursive;
+  font-size: 35px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+/* Nav ở giữa */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* User items bên phải */
+.userItems {
+  display: flex;
+  justify-self: end;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Nav item */
+nav li {
+  list-style: none;
+  margin: 0;
+}
+
+.nav li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav li a:hover,
+.nav li a.active {
+  color: var(--primary);
+}
+
+.menu{
+    color: #ffffff;
+    font-size: 2em;
+    transition: 0.5s;
+    display: none;
+    z-index: 10000;
+}
+
+.userItems{
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.userItems .icon{
+  position: relative;
+  color: #ffffff;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+  5px 5px 15px rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.userItems .icon .like,
+.userItems .icon .bag{
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 18px;
+  height: 18px;
+  background: #ff3b3b;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 50%;
+  pointer-events: none;
+  user-select: none;
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 0;
+  margin: 0;
+  
+  line-height: 1;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 0;
+}

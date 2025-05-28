@@ -1,0 +1,52 @@
+.banner {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Lớp overlay làm tối background */
+.banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4); /* Điều chỉnh mức tối tại đây */
+  z-index: 2; /* Nằm trên ảnh nền */
+  pointer-events: none; /* Không chặn tương tác */
+}
+
+/* Hình nền */
+.bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transform: scale(0);
+  transition: 1s;
+  z-index: 1; /* Dưới overlay */
+}
+
+.bgImg.active {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Nội dung */
+.content {
+  position: relative;
+  z-index: 3; /* Trên overlay */
+  height: 100vh;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
