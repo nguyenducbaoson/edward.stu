@@ -1,19 +1,82 @@
-nav li{
-    list-style: none;
-    margin: 0 20px;
+/* navListItem.css */
+.nav {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .nav li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: 0.3s;
+  text-decoration: none;
+  position: relative;
+  padding: 8px 0;
+  font-size: 14px;
 }
 
-.nav li a:hover,
-.nav li a.active{
-    color: var(--primary);
+.nav li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+.nav li a:hover::after {
+  width: 100%;
+}
+
+/* Mobile toggle */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.nav-toggle span {
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+/* Menu open icon animation (optional) */
+.nav-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
 }

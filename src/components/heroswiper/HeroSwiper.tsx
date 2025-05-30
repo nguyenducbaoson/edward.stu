@@ -1,9 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Mousewheel, Pagination } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-
+import './heroswiper.css'
 interface SlideItem {
   _id: number;
   bgImg: string;
@@ -25,46 +24,53 @@ type Props = {
 const HeroSwiper = ({ slides }: Props) => {
   return (
     <Swiper
+      direction="vertical"
       slidesPerView={1}
-      loop={true}
-      autoplay={{
-        delay: 3000,
-        disableOnInteraction: false,
+      mousewheel={{
+        forceToAxis: true,
+        sensitivity: 1,
       }}
-      navigation={true}
+      speed={700}
       pagination={{ clickable: true }}
-      modules={[Autoplay, Navigation, Pagination]}
+      modules={[Mousewheel, Pagination]}
       className="heroSwiper"
+      style={{ height: '100vh' }}
     >
       {slides?.map((slide) => (
         <SwiperSlide key={slide._id}>
-          <div className="slideItem" style={{
-            backgroundImage: `url(${slide.bgImg})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            height: '100vh',
-            color: 'white',
-            position: 'relative'
-          }}>
-            <div className="slideContent" style={{
-              position: 'absolute',
-              top: '50%',
-              left: '10%',
-              transform: 'translateY(-50%)',
-              zIndex: 10
-            }}>
-              <h2>{slide.title}</h2>
-              <p>{slide.subtitle}</p>
+          <div
+            style={{
+              backgroundImage: `url(${slide.bgImg})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              height: '100vh',
+              position: 'relative',
+              color: 'white',
+            }}
+          >
+            <div
+              style={{
+                position: 'absolute',
+                top: '50%',
+                left: '10%',
+                transform: 'translateY(-50%)',
+                zIndex: 10,
+              }}
+            >
+              <h2 className="text-5xl font-bold mb-4">{slide.title}</h2>
+              <p className="text-xl mb-6">{slide.subtitle}</p>
               <button className="mainButton">Shop Now</button>
             </div>
-            <div className="overlay" style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              width: '100%',
-              height: '100%',
-              backgroundColor: 'rgba(0,0,0,0.3)'
-            }}></div>
+            <div
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                backgroundColor: 'rgba(0,0,0,0.3)',
+              }}
+            />
           </div>
         </SwiperSlide>
       ))}
