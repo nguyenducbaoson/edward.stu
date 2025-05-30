@@ -8,6 +8,15 @@ const Header = () => {
   const [navList, setNavList] = useState(navListData);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const handleNavClick = (id: number) => {
+    setNavList(prev =>
+      prev.map(item => ({
+        ...item,
+        active: item._id === id,
+      }))
+    );
+  };
+
   return (
     <header>
       <div className="logo">Edward.Stu</div>
@@ -20,7 +29,7 @@ const Header = () => {
 
       <ul className={`nav ${menuOpen ? 'show' : ''}`}>
         {navList.map(nav => (
-          <NavListItem key={nav._id} nav={nav} />
+          <NavListItem key={nav._id} nav={nav} onClick={handleNavClick} />
         ))}
       </ul>
 
@@ -30,11 +39,12 @@ const Header = () => {
           <span className="like">3</span>
         </a>
         <a href="#" className="icon">
-          <i className='bi bi-bag-fill'> </i>
+          <i className='bi bi-bag-fill'></i>
           <span className="like">7</span>
         </a>
       </div>
     </header>
   );
 };
+
 export default Header;

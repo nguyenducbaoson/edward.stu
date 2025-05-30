@@ -3,6 +3,7 @@ import './navListItem.css';
 
 type Props = {
   nav: Nav;
+  onClick: (_id: number) => void;
 };
 
 type Nav = {
@@ -14,11 +15,15 @@ type Nav = {
   active: boolean;
 };
 
-const NavListItem = (props: Props) => {
+const NavListItem = ({ nav, onClick }: Props) => {
   return (
     <li>
-      <Link to={props.nav.link}>
-        {props.nav.name}
+      <Link
+        to={nav.link}
+        className={nav.active ? 'active' : ''}
+        onClick={() => onClick(nav._id)}
+      >
+        {nav.name}
       </Link>
     </li>
   );

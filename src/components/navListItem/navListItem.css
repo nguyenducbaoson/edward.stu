@@ -1,4 +1,5 @@
 /* navListItem.css */
+
 .nav {
   display: flex;
   gap: 32px;
@@ -9,29 +10,36 @@
   text-transform: uppercase;
 }
 
+/* Common link style */
 .nav li a {
+  display: inline-block;
   text-decoration: none;
   position: relative;
-  padding: 8px 0;
+  padding: 6px 0;
   font-size: 14px;
+  color: white;
+  transition: color 0.3s ease;
 }
 
+/* Underline effect */
 .nav li a::after {
   content: '';
   position: absolute;
-  width: 0%;
-  height: 2px;
+  bottom: -3px;
   left: 0;
-  bottom: 0;
-  background-color: #000;
+  width: 0;
+  height: 2px;
+  background-color: white;
   transition: width 0.3s ease;
 }
 
-.nav li a:hover::after {
+/* Active + hover effect */
+.nav li a:hover::after,
+.nav li a.active::after {
   width: 100%;
 }
 
-/* Mobile toggle */
+/* Mobile toggle icon */
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -46,7 +54,7 @@
   transition: all 0.3s ease;
 }
 
-/* Menu open icon animation (optional) */
+/* Menu open icon animation */
 .nav-toggle.open span:nth-child(1) {
   transform: rotate(45deg) translateY(8px);
 }
@@ -57,7 +65,7 @@
   transform: rotate(-45deg) translateY(-8px);
 }
 
-/* Responsive */
+/* Responsive behavior */
 @media (max-width: 768px) {
   .nav {
     display: none;
@@ -78,5 +86,18 @@
 
   .nav-toggle {
     display: flex;
+  }
+
+  .nav li a {
+    color: black;
+  }
+
+  .nav li a::after {
+    background-color: black;
+  }
+
+  .nav li a:hover::after,
+  .nav li a.active::after {
+    width: 100%;
   }
 }

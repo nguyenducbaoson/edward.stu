@@ -48,56 +48,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor voluptas ducimus sunt quas, est vel at ut error adipisci obcaecati et veritatis quos qui aliquid saepe labore voluptatem modi.</p>
-
     </footer>
   );
 };
