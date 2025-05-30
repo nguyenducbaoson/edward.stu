@@ -11,7 +11,7 @@ interface SlideItem {
   subtitle: string;
   category: string[];
   promotion: string;
-  gender: string; // Phân loại như 'Women', 'Men', ...
+  gender: string;
   price: number;
   discount: number;
   description: string;
